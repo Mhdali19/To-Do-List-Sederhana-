@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST BASIC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Masukkan To do list anda disini</h1>
+        <label for="todolist">TO DO : </label>
+        <input type="text" id="todolist" />
+        <input type="submit" onclick="tambahkan()" />
+      </header>
+      <div class="menuTugas">
+        <div class="belumMulai" id="kotak1">
+          <ul id="ulKotak1">
+            <p style="text-align: center; margin-right: 30px">
+              Belum Dikerjakan
+            </p>
+          </ul>
+        </div>
+        <div class="sedangDikerjakan">
+          <ul id="ulKotak2">
+            <p style="text-align: center; margin-right: 30px">
+                Sedang Dikerjakan
+              </p>
+          </ul>
+        </div>
+        <div class="sudahSelesai">
+            <ul id="ulKotak3">
+                <p style="text-align: center; margin-right: 30px">
+                    Sudah Selesai
+                  </p>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
